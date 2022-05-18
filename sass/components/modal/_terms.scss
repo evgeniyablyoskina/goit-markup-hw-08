@@ -1,0 +1,58 @@
+/* --------------- Terms */
+
+.terms {
+  margin-bottom: 30px;
+}
+
+.terms__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0;
+}
+
+.terms__thumb {
+  position: relative;
+  width: 16px;
+  height: 15px;
+  
+  display: block;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.terms__icon {
+  border: 1px solid black;
+  border-radius: 2px;
+  fill: transparent;
+  stroke: transparent;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  stroke-width: 0.4267;
+
+  .terms__checkbox:checked + & {
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    fill: white;
+    stroke: white;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    stroke-width: 0.4267;
+  }
+}
+
+.terms__text {
+  margin-left: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.terms__link {
+  color: var(--accent-color);
+}
+
+/* END Terms */

@@ -1,0 +1,37 @@
+/* --------------- Socials */
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--icon-color);
+  border-radius: 50%;
+
+  transition-property: color, background-color;
+  @extend %transition-data;
+
+  &:hover,
+  &:focus {
+    color: var(--twin-accent-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+/* END Socials */

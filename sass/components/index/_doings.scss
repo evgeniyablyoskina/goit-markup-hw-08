@@ -1,0 +1,39 @@
+/* --------------- Our Doings */
+
+.doings {
+  display: flex;
+  margin-left: calc(-1 * var(--item-gap));
+}
+
+.doings__item {
+  margin-left: var(--item-gap);
+  flex-basis: calc(100% / 3 - var(--item-gap));
+}
+
+.doings__thumb {
+  position: relative;
+}
+
+.doings__label {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--light-text-color);
+  background-color: var(--label-doing-bg-color);
+}
+
+/* END Our Doings */

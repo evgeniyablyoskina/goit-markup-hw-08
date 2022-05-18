@@ -1,0 +1,41 @@
+// common
+@import './utils/vars';
+@import './base/common';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+// header
+@import './components/logo';
+@import './components/header/header';
+@import './components/header/site-nav';
+@import './components/header/contacts';
+
+// index.html
+@import './components/section';
+@import './components/index/hero';
+@import './components/button';
+@import './components/index/features';
+@import './components/index/doings';
+@import './components/index/team';
+@import './components/socials';
+@import './components/index/clients';
+
+// portfolio.html
+@import './components/portfolio/filtr';
+@import './components/portfolio/portfolio';
+
+// footer
+@import './components/footer/footer';
+@import './components/footer/address';
+@import './components/footer/join';
+@import './components/footer/subscription';
+
+// modal
+@import './components/modal/modal';
+@import './components/modal/form';
+@import './components/modal/terms';
+
+/* TODO
+svgomg */
+
+/* позиционирование, геометрия, текст, оформление  */

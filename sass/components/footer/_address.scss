@@ -1,0 +1,39 @@
+/* --------------- Address */
+
+.address {
+  margin-top: 20px;
+  width: 231px;
+}
+
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.address__link {
+  display: inline-block;
+
+  width: 231px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+
+  transition-property: color;
+  @extend %transition-data;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--bright {
+    color: var(--light-text-color);
+  }
+
+  &--dull {
+    color: var(--address-contact-color);
+  }
+}
+
+/* END Address */
