@@ -1,12 +1,17 @@
 /* --------------- Join */
 
-// .join {
-//   margin-left: 70px;
-// }
+.join {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
 
-// .join__socials__link {
-//   color: var(--light-text-color);
-//   background-color: var(--icon-bg-color);
-// }
+.join__socials__link {
+  color: var(--light-text-color);
+  background-color: var(--icon-bg-color);
+}
 
 /* END Join */

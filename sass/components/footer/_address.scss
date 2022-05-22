@@ -1,39 +1,46 @@
 /* --------------- Address */
 
-// .address {
-//   margin-top: 20px;
-//   width: 231px;
-// }
+.address {
+  text-align: center;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
 
-// .address__item:not(:first-child) {
-//   margin-top: 9px;
-// }
+.address-list {
+  margin-top: 20px;
+  width: 231px;
+}
 
-// .address__link {
-//   display: inline-block;
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
 
-//   width: 231px;
+.address__link {
+  display: inline-block;
 
-//   font-style: normal;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   text-decoration: none;
+  width: 231px;
 
-//   transition-property: color;
-//   @extend %transition-data;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
 
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
+  transition-property: color;
+  @extend %transition-data;
 
-//   &--bright {
-//     color: var(--light-text-color);
-//   }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-//   &--dull {
-//     color: var(--address-contact-color);
-//   }
-// }
+  &--bright {
+    color: var(--light-text-color);
+  }
+
+  &--dull {
+    color: var(--address-contact-color);
+  }
+}
 
 /* END Address */
