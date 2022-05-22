@@ -385,7 +385,6 @@ body.modal-open {
 }
 
 .section__title {
-  outline: 1px solid grey;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;
@@ -478,7 +477,6 @@ body.modal-open {
 /* END Button */
 /* --------------- Features */
 .features {
-  outline: 1px solid red;
   margin-top: calc(-1 * var(--item-gap));
 }
 @media screen and (min-width: 768px) {
@@ -490,7 +488,6 @@ body.modal-open {
 }
 
 .features__item {
-  outline: 1px solid blue;
   margin-top: var(--item-gap);
 }
 @media screen and (min-width: 768px) {
@@ -506,7 +503,6 @@ body.modal-open {
 }
 
 .features__thumb {
-  outline: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,7 +513,6 @@ body.modal-open {
 }
 
 .features__title {
-  outline: 1px solid greenyellow;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -533,7 +528,6 @@ body.modal-open {
 }
 
 .features__description {
-  outline: 1px solid orange;
   display: block;
   margin-top: 0;
   margin-bottom: 0;
@@ -583,9 +577,6 @@ body.modal-open {
 
 /* END Our Doings */
 /* --------------- Our team */
-.team {
-  outline: 1px solid red;
-}
 @media screen and (min-width: 768px) {
   .team {
     display: flex;
@@ -596,7 +587,6 @@ body.modal-open {
 }
 
 .team__item {
-  outline: 1px solid blue;
   margin-top: var(--item-gap);
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -940,6 +930,12 @@ body.modal-open {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 @media screen and (min-width: 1200px) {
