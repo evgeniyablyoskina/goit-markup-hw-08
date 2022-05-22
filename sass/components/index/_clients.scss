@@ -2,7 +2,24 @@
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  margin-top: calc(-1 * var(--item-gap));
+}
+
+.clients__item {
+  margin-top: var(--item-gap);
+
+  flex-basis: calc(100% / 2 - var(--item-gap) / 2);
+  height: 92px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - var(--item-gap) * 2 / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - var(--item-gap) * 5 / 6);
+  }
 }
 
 .clients__link {
@@ -10,8 +27,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
-  height: 92px;
+  height: 100%;
 
   color: var(--icon-color);
   border: 1px solid var(--icon-color);

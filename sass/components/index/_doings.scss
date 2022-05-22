@@ -1,5 +1,11 @@
 /* --------------- Our Doings */
 
+.section__doings {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .doings {
   display: flex;
   margin-left: calc(-1 * var(--item-gap));

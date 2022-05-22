@@ -6,9 +6,10 @@
 
 // header
 @import './components/logo';
-@import './components/header/header';
+@import './components/header/page-header';
+@import './components/header/menu';
 @import './components/header/site-nav';
-@import './components/header/contacts';
+@import './components/header/header-contacts';
 
 // index.html
 @import './components/section';

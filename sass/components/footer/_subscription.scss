@@ -1,33 +1,33 @@
 /* --------------- Subscription */
 
-.subscription {
-  margin-left: 93px;
-}
+// .subscription {
+//   margin-left: 93px;
+// }
 
-.subscription__row {
-  display: flex;
-}
+// .subscription__row {
+//   display: flex;
+// }
 
-.subscription__input {
-  width: 353px;
-  height: 50px;
-  margin-right: 12px;
+// .subscription__input {
+//   width: 353px;
+//   height: 50px;
+//   margin-right: 12px;
 
-  padding-left: 16px;
+//   padding-left: 16px;
 
-  color: var(--light-text-color);
-  background-color: var(--dark-bg-color);
-  border: 1px solid var(--subscr-border-color);
-  border-radius: 4px;
+//   color: var(--light-text-color);
+//   background-color: var(--dark-bg-color);
+//   border: 1px solid var(--subscr-border-color);
+//   border-radius: 4px;
 
-  transition-property: border;
-  @extend %transition-data;
+//   transition-property: border;
+//   @extend %transition-data;
 
-  &:focus {
-    border: 1px solid var(--accent-color);
-    outline: 1px solid var(--accent-color);
-  }
-}
+//   &:focus {
+//     border: 1px solid var(--accent-color);
+//     outline: 1px solid var(--accent-color);
+//   }
+// }
 
 /* subscription button */
 

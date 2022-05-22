@@ -1,7 +1,7 @@
 /* --------------- Form */
 
 .form {
-  width: 448px;
+  //   width: 448px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,8 +12,12 @@
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__item {

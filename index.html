@@ -27,54 +27,84 @@
           <span class="logo__accent">Web</span>Studio
         </a>
 
-        <nav class="site-nav">
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a
-                href="./index.html"
-                class="header-menu__link site-nav__link site-nav__link--current"
-              >
-                Студия
+        <!-- _______________ Burger button _______________ -->
+        <button
+          type="button"
+          class="menu-button"
+          aria-expended="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
+            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <!-- _______________ Site Nav _______________ -->
+          <nav class="site-nav">
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link site-nav__link--current"> Студия </a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link"> Портфолио </a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- _______________ Header Contacts _______________ -->
+          <ul class="header-contacts list">
+            <li class="header-contacts__item">
+              <a href="mailto:info@devstudio.com" class="header-contacts__link">
+                <svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
               </a>
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="header-menu__link site-nav__link"> Портфолио </a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="header-menu__link site-nav__link"> Контакты </a>
+            <li class="header-contacts__item">
+              <a
+                href="tel:+380961111111"
+                class="header-contacts__link header-contacts__link--accent"
+              >
+                <svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="header-contacts list">
-          <li class="header-contacts__item">
-            <a href="mailto:info@devstudio.com" class="header-menu__link header-contacts__link">
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contacts__item">
-            <a href="tel:+380961111111" class="header-menu__link header-contacts__link">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <!-- _______________ Header Socials _______________ -->
+          <ul class="header-socials list">
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">Instagram</a>
+            </li>
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">Twitter</a>
+            </li>
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">Facebook</a>
+            </li>
+            <li class="header-socials__item">
+              <a href="" class="header-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- _______________ Hero _______________ -->
       <section class="hero">
-        <!-- <div class="overlay"> -->
         <div class="container">
           <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
           <button class="button" type="button" data-modal-open>Заказать услугу</button>
-          <!-- </div> -->
         </div>
       </section>
 
@@ -132,7 +162,7 @@
       </section>
 
       <!-- _______________ Our Doings _______________ -->
-      <section class="section section--no-padding-top">
+      <section class="section section__doings section--no-padding-top">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="doings list">
@@ -164,7 +194,19 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img src="./images/teamcard1.jpg" alt="Фото Игоря" width="270" class="team-img" />
+              <img
+                srcset="
+                  ./images/teamcard1-270.jpg 270w,
+                  ./images/teamcard1-450.jpg 450w,
+                  ./images/teamcard1-900.jpg 900w
+                "
+                src="./images/teamcard1-270.jpg"
+                alt="Фото Игоря"
+                width="270"
+                height="260"
+                sizes="(min-width: 1200) 25vw, (min-width: 768px) 50vw, 100vw"
+                class="team__img"
+              />
               <div class="team__info">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -202,7 +244,7 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/teamcard2.jpg" alt="Фото Ольги" width="270" />
+              <img src="./images/teamcard2.jpg" alt="Фото Ольги" width="270" class="team__img" />
               <div class="team__info">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -240,7 +282,7 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/teamcard3.jpg" alt="Фото Николая" width="270" />
+              <img src="./images/teamcard3.jpg" alt="Фото Николая" width="270" class="team__img" />
               <div class="team__info">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -278,7 +320,7 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/teamcard4.jpg" alt="Фото Михаила" width="270" />
+              <img src="./images/teamcard4.jpg" alt="Фото Михаила" width="270" class="team__img" />
               <div class="team__info">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
@@ -323,42 +365,42 @@
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients list">
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-client6"></use>
@@ -371,7 +413,11 @@
     </main>
 
     <!--  _______________ Footer _______________ -->
-    <footer class="footer">
+    <!--  _______________ Logo _______________ -->
+    <!--  _______________ Addresses _______________ -->
+    <!--  _______________ Join! _______________ -->
+    <!--  _______________ Subscribe! _______________ -->
+    <!-- <footer class="footer">
       <div class="container footer__box">
         <div>
           <a href="./index.html" class="logo logo--inverse" lang="en">
@@ -461,7 +507,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- _______________ Modal Window _______________ -->
     <div class="backdrop is-hidden" data-modal>
@@ -536,12 +582,12 @@
             </li>
           </ul>
 
-          <!-- send -->
           <button class="button" type="submit" data-modal-close>Отправить</button>
         </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

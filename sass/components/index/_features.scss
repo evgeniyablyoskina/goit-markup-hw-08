@@ -1,16 +1,35 @@
 /* --------------- Features */
 
 .features {
-  display: flex;
-  margin-left: calc(-1 * var(--item-gap));
+  outline: 1px solid red;
+
+  margin-top: calc(-1 * var(--item-gap));
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: calc(-1 * var(--item-gap));
+  }
 }
 
 .features__item {
-  flex-basis: calc(100% / 4 - var(--item-gap));
-  margin-left: var(--item-gap);
+  outline: 1px solid blue;
+
+  margin-top: var(--item-gap);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--item-gap));
+    margin-left: var(--item-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - var(--item-gap));
+  }
 }
 
 .features__thumb {
+  outline: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,19 +42,29 @@
 }
 
 .features__title {
+  outline: 1px solid greenyellow;
   margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 
   color: var(--title-text-color);
 }
 
 .features__description {
+  outline: 1px solid orange;
+  display: block;
   margin-top: 0;
   margin-bottom: 0;
+
+  width: 100%;
 
   font-size: 14px;
   line-height: 1.71;

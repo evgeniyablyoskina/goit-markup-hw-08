@@ -1,0 +1,83 @@
+/* --------------- Menu-Header */
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  background-color: var(--main-bg-color);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    // position: fixed;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    // height: calc(100%);
+
+    padding: 48px 40px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-socials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-socials__item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.header-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--accent-color);
+}
+
+/* END Menu-Header */

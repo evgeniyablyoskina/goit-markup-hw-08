@@ -37,7 +37,15 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 
-  width: 1200px;
+  @each $breakpoint in $breakpoints {
+    @media screen and (min-width: #{$breakpoint}) {
+      width: #{$breakpoint};
+    }
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 /* END Common */
