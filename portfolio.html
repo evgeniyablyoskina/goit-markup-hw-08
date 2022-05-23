@@ -21,7 +21,6 @@
   <body>
     <!-- _______________ Header _______________ -->
     <!-- Change current! -->
-    <!-- _______________ Header _______________ -->
     <header class="page-header">
       <div class="container page-header__container">
         <!-- _______________ Logo _______________ -->
@@ -48,7 +47,7 @@
           <nav class="site-nav">
             <ul class="site-nav list">
               <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link"> Студия </a>
+                <a href="./index.html" class="site-nav__link">Студия</a>
               </li>
               <li class="site-nav__item">
                 <a href="./portfolio.html" class="site-nav__link site-nav__link--current">
@@ -56,7 +55,7 @@
                 </a>
               </li>
               <li class="site-nav__item">
-                <a href="" class="site-nav__link"> Контакты </a>
+                <a href="" class="site-nav__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -127,12 +126,29 @@
             </li>
           </ul>
 
-          <!-- _______________ portfolio _______________ -->
+          <!-- _______________ Portfolio _______________ -->
           <ul class="portfolio list">
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project1.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project1.jpg 1x, ./images/project1@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project1-tablet.jpg, ./images/project1-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project1-mobile.jpg 1x, ./images/project1-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project1.jpg" alt="Технокряк" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -149,7 +165,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project2.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project2.jpg 1x, ./images/project2@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project2-tablet.jpg, ./images/project2-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project2-mobile.jpg 1x, ./images/project2-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project2.jpg" alt="Постер" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -166,7 +199,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project3.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project3.jpg 1x, ./images/project3@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project3-tablet.jpg, ./images/project3-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project3-mobile.jpg 1x, ./images/project3-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project3.jpg" alt="Ресторан" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -183,7 +233,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project4.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project4.jpg 1x, ./images/project4@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project4-tablet.jpg, ./images/project4-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project4-mobile.jpg 1x, ./images/project4-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project4.jpg" alt="Проект" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -200,7 +267,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project5.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project5.jpg 1x, ./images/project5@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project5-tablet.jpg, ./images/project5-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project5-mobile.jpg 1x, ./images/project5-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project5.jpg" alt="Проект" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -217,7 +301,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project6.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project6.jpg 1x, ./images/project6@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project6-tablet.jpg, ./images/project6-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project6-mobile.jpg 1x, ./images/project6-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project6.jpg" alt="Inspiration has no Borders" lang="en" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -234,7 +335,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project7.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project7.jpg 1x, ./images/project7@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project7-tablet.jpg, ./images/project7-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project7-mobile.jpg 1x, ./images/project7-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project7.jpg" alt="Издание Limited Edition" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -251,7 +369,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project8.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project8.jpg 1x, ./images/project8@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project8-tablet.jpg, ./images/project8-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project8-mobile.jpg 1x, ./images/project8-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project8.jpg" alt="Проект LAB" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -268,7 +403,24 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img src="./images/project9.jpg" alt="" width="370" class="portfolio__thumb" />
+                  <picture class="portfolio__thumb">
+                    <source
+                      srcset="./images/project9.jpg 1x, ./images/project9@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project9-tablet.jpg, ./images/project9-tablet@2x.jpg"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/project9-mobile.jpg 1x, ./images/project9-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project9.jpg" alt="Growing Business" />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
