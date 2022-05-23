@@ -340,6 +340,7 @@ body.modal-open {
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
+  white-space: nowrap;
   color: var(--primary-text-color);
   fill: var(--primary-text-color);
   transition-property: color, fill;

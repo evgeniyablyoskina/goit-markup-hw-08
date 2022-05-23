@@ -48,6 +48,7 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
+  white-space: nowrap;
 
   color: var(--primary-text-color);
   fill: var(--primary-text-color);
@@ -59,6 +60,7 @@
     @media screen and (max-width: 767px) {
       font-size: 34px;
       line-height: 1.18;
+
       color: var(--accent-color);
     }
   }
