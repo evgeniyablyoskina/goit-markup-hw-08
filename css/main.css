@@ -204,9 +204,8 @@ body.modal-open {
 }
 
 .header-socials__item {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  flex-grow: 1;
+  text-align: center;
 }
 .header-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
