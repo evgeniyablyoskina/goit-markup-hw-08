@@ -1,8 +1,6 @@
 /* --------------- Features */
 
 .features {
-  // outline: 1px solid red;
-
   margin-top: calc(-1 * var(--item-gap));
 
   @media screen and (min-width: 768px) {
@@ -14,8 +12,6 @@
 }
 
 .features__item {
-  // outline: 1px solid blue;
-
   margin-top: var(--item-gap);
 
   @media screen and (min-width: 768px) {
@@ -29,7 +25,6 @@
 }
 
 .features__thumb {
-  // outline: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +37,6 @@
 }
 
 .features__title {
-  // outline: 1px solid greenyellow;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -59,7 +53,6 @@
 }
 
 .features__description {
-  // outline: 1px solid orange;
   display: block;
   margin-top: 0;
   margin-bottom: 0;

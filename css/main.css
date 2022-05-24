@@ -183,7 +183,6 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 1px solid tomato;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1088,6 +1087,7 @@ body.modal-open {
 }
 
 .modal {
+  position: relative;
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
