@@ -386,8 +386,14 @@ body.modal-open {
 /* END Header Contacts */
 /* --------------- For all Sections */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -830,7 +836,9 @@ body.modal-open {
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   transition-property: box-shadow;
 }
@@ -934,12 +942,10 @@ body.modal-open {
 
 /* END Footer */
 /* --------------- Address */
-.address {
-  text-align: center;
-}
 @media screen and (max-width: 1199px) {
   .address {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
 
